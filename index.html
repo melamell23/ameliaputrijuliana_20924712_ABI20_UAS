@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title> Zai.Flo </title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <h1>Zalls.florist</h1>
+    <div id="hamburger" class="hamburger">
+      &#9776;
+    </div>
+    <ul class="nav-links">
+      <li><a href="#welcome">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="cart-icon" class="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="welcome" class="welcome-section">
+    <h2>Welcome to Bouquet Shop</h2>
+    <p>Your one-stop shop for beautiful bouquets for every occasion.</p>
+    <button id="shop-now-btn">Shop Now</button>
+  </section>
+
+  <section id="products" class="products">
+    <!-- Products will be inserted here -->
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <aside id="cart" class="cart hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-total">
+      Total: $<span id="cart-total">0.00</span>
+    </div>
+    <button id="checkout-btn">Checkout</button>
+    <button id="close-cart-btn">Close</button>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
